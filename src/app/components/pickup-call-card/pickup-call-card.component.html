@@ -29,6 +29,6 @@
       <ion-icon name="thropy" slot="start" color="success"></ion-icon>
       <ion-label color="success">{{value}}</ion-label>
     </ion-item>
-    <ion-button *ngIf="hasFooter" color="success" fill="clear" size="full">See all...</ion-button>
+    <ng-content select="[footer]"></ng-content>
   </ion-card-content>
 </ion-card>

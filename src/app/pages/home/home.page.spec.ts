@@ -29,11 +29,12 @@ describe('HomePage', () => {
     component.goToPickupCalls();
 
     expect(router.navigate).toHaveBeenCalledWith(['pickup-calls']);
-  });
-  it('should go to new pickup call on on create pickup call', () => {
+  })
+
+  it('should go to new pickup call on create pickup call', () => {
     spyOn(router, 'navigate');
     component.newPickupCall();
 
     expect(router.navigate).toHaveBeenCalledWith(['pickup-call']);
-  });
+  })
 });
