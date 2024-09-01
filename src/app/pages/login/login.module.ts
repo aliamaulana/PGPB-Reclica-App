@@ -9,6 +9,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 import { ErrorMessageComponent } from 'src/app/components/error-message/error-message.component';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -19,7 +20,7 @@ import { ErrorMessageComponent } from 'src/app/components/error-message/error-me
   ],
   declarations: [
     LoginPage,
-  ErrorMessageComponent
-]
+    ErrorMessageComponent
+  ]
 })
 export class LoginPageModule {}
